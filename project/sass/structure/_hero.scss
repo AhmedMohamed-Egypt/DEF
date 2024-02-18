@@ -126,10 +126,11 @@ $classes: (
 .hero__content {
   position: absolute !important;
   bottom: 20%;
-  left: 0;
+  left: 80px;
   right: 0;
   margin: auto;
   display: block;
+  width: calc(100% - 80px);
   .hero-details {
     .containerIcon {
       width: 60px;
@@ -180,7 +181,8 @@ $classes: (
 .numericSection {
   position: absolute;
   bottom: 20px;
-  width: 100%;
+  left: 80px;
+  width: calc(100% - 80px);
   .numericSection--container {
     font-family: "numericFont";
     background-image: url("../images/Bitmap-timer.png");
