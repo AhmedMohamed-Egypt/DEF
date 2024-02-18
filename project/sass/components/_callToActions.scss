@@ -1,0 +1,37 @@
+.GetTicket{
+    width: 185px;
+    height: 64px;
+    clip-path: polygon( 2.073% 31.541%,13.565% 0%,24.273% 0%,27.146% 8.602%,95.054% 8.602%,97.927% 16.488%,97.666% 55.914%,85.913% 88.889%,7.819% 88.889%,2.073% 74.552%,2.073% 31.541% );
+    background-color: $darkYellow;
+    display: block;
+    position: relative;
+    p{
+        @include cntrElmnt();
+        top: 42%;
+        transform: translate(-25%, -50%);
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: 'lamaExtraBold';
+        color: #000;
+        letter-spacing: .5px;
+ 
+        span{
+            display: inline-block;
+            &:nth-child(1){
+                margin-right: 10px;
+                transform: translateY(6px);
+            }
+        }
+    }
+    &::after{
+        position: absolute;
+        top: 14px;
+        left: 30px;
+        content:"";
+        width: 30px;
+        height: 30px;
+        background-image: url("data:image/svg+xml,%3Csvg width='36' height='34' viewBox='0 0 36 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.8759 19.9799L13.3824 22.0838' stroke='%23040720'/%3E%3Cpath d='M7.95081 17.5255L10.0401 19.2787' stroke='%23040720'/%3E%3Cpath d='M17.561 25.59L20.0682 27.6938' stroke='%23040720'/%3E%3Cpath d='M21.3934 7.44428L23.9006 9.54805' stroke='%23040720'/%3E%3Cpath d='M18.469 4.98966L20.5583 6.7428' stroke='%23040720'/%3E%3Cpath d='M24.7363 10.2492L27.2435 12.353' stroke='%23040720'/%3E%3Cpath d='M28.0792 13.0541L30.5864 15.1579' stroke='%23040720'/%3E%3Cpath d='M16.176 32.2073L33.3914 11.815L28.7949 7.95808C28.2134 8.64709 27.0881 8.6595 26.2805 7.98446C25.4729 7.30943 25.2884 6.19268 25.8698 5.50367L21.2733 1.64675L5.80509 20.2084' stroke='%23040720' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.1346 13.712L18.9109 14.4658L20.8232 12.6637L21.238 15.4452L23.5013 16.8103L21.1258 17.9001L20.4668 20.4242L18.7294 18.4396L15.9151 18.5137L17.3597 16.3151L16.1346 13.712Z' fill='%23994392'/%3E%3Cpath d='M4.50651 21.7561L3.20789 23.3037' stroke='%23040720' stroke-linejoin='round'/%3E%3Cpath d='M13.7481 4.45615L8.55359 10.6467' stroke='%23040720' stroke-linejoin='round'/%3E%3Cpath d='M7.25505 12.1945L5.95642 13.7422' stroke='%23040720' stroke-linejoin='round'/%3E%3Cpath d='M4.65776 15.2898L3.35913 16.8374' stroke='%23040720' stroke-linejoin='round'/%3E%3Cpath d='M9.08711 24.9404L3.24329 31.9048' stroke='%23040720' stroke-linejoin='round'/%3E%3Cpath d='M15.429 23.6686L10.2345 29.8591' stroke='%23040720' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    }
+
+
+}

@@ -1,0 +1,285 @@
+%commonh3 {
+  clip-path: polygon(
+    21.467% 0.714%,
+    99.562% 0.714%,
+    84.363% 82.997%,
+    84.363% 82.997%,
+    83.764% 85.96%,
+    83.115% 88.653%,
+    82.419% 91.065%,
+    81.681% 93.188%,
+    80.906% 95.01%,
+    80.099% 96.523%,
+    79.264% 97.717%,
+    78.406% 98.582%,
+    77.529% 99.108%,
+    76.638% 99.286%,
+    2.4% 99.286%,
+    2.4% 99.286%,
+    1.9% 99.024%,
+    1.455% 98.287%,
+    1.073% 97.148%,
+    0.761% 95.681%,
+    0.528% 93.959%,
+    0.38% 92.056%,
+    0.326% 90.044%,
+    0.374% 87.997%,
+    0.53% 85.988%,
+    0.804% 84.091%,
+    12.746% 19.155%,
+    12.746% 19.155%,
+    13.421% 15.801%,
+    14.154% 12.753%,
+    14.939% 10.022%,
+    15.772% 7.619%,
+    16.647% 5.555%,
+    17.558% 3.842%,
+    18.501% 2.49%,
+    19.471% 1.511%,
+    20.461% 0.915%,
+    21.467% 0.714%
+  );
+  padding: 15px 0;
+  position: relative;
+  width: 320px;
+}
+%backLine {
+  display: block;
+  background-color: $drkviolet;
+  width: 320px;
+  height: 38px;
+  clip-path: polygon(
+    6.518% 21.566%,
+    6.518% 21.566%,
+    6.987% 17.645%,
+    7.496% 14.081%,
+    8.042% 10.887%,
+    8.622% 8.077%,
+    9.23% 5.663%,
+    9.865% 3.659%,
+    10.521% 2.078%,
+    11.196% 0.932%,
+    11.886% 0.235%,
+    12.587% 0%,
+    98.027% 0%,
+    98.027% 0%,
+    98.442% 0.366%,
+    98.81% 1.395%,
+    99.126% 2.983%,
+    99.383% 5.028%,
+    99.575% 7.426%,
+    99.695% 10.074%,
+    99.737% 12.869%,
+    99.694% 15.708%,
+    99.561% 18.486%,
+    99.33% 21.102%,
+    94.431% 64.594%,
+    94.431% 64.594%,
+    93.638% 71.042%,
+    92.779% 76.899%,
+    91.861% 82.144%,
+    90.89% 86.758%,
+    89.871% 90.718%,
+    88.81% 94.004%,
+    87.714% 96.596%,
+    86.588% 98.473%,
+    85.438% 99.615%,
+    84.27% 100%,
+    2.281% 100%,
+    2.281% 100%,
+    1.787% 99.567%,
+    1.348% 98.349%,
+    0.97% 96.467%,
+    0.661% 94.041%,
+    0.43% 91.194%,
+    0.284% 88.045%,
+    0.23% 84.716%,
+    0.276% 81.327%,
+    0.429% 78.001%,
+    0.698% 74.857%,
+    6.518% 21.566%
+  );
+  position: absolute;
+  z-index: -1;
+  left: -25px;
+  top: 10px;
+}
+%price {
+  clip-path: polygon(
+    92.401% 70.165%,
+    92.401% 70.165%,
+    91.512% 75.591%,
+    90.548% 80.523%,
+    89.514% 84.941%,
+    88.418% 88.829%,
+    87.266% 92.167%,
+    86.066% 94.939%,
+    84.825% 97.126%,
+    83.549% 98.711%,
+    82.245% 99.675%,
+    80.92% 100%,
+    2.543% 100%,
+    2.543% 100%,
+    1.978% 99.634%,
+    1.476% 98.605%,
+    1.045% 97.017%,
+    0.695% 94.972%,
+    0.434% 92.574%,
+    0.27% 89.926%,
+    0.213% 87.131%,
+    0.271% 84.292%,
+    0.453% 81.514%,
+    0.768% 78.898%,
+    12.878% 0%,
+    96.981% 0%,
+    96.981% 0%,
+    97.655% 0.434%,
+    98.255% 1.655%,
+    98.77% 3.541%,
+    99.19% 5.972%,
+    99.505% 8.825%,
+    99.704% 11.979%,
+    99.777% 15.312%,
+    99.713% 18.704%,
+    99.502% 22.032%,
+    99.133% 25.175%,
+    92.401% 70.165%
+  );
+  width: 226px;
+  height: 39px;
+}
+.earlyBird,
+.media,
+.vip {
+  position: relative;
+  .headings {
+    top: -65px;
+    left: 0;
+    z-index: 9999;
+  }
+  h3 {
+    /* Rectangle Copy */
+
+    background: linear-gradient(270deg, #994392 0%, #e7c589 83.78%);
+
+    @extend %commonh3;
+    position: relative;
+    &::after{
+      @include after();
+      background-color: #f00;
+      
+    }
+  }
+  .backLine {
+    @extend %backLine;
+  }
+  .price {
+    @extend %price;
+    background-color: $lightYellow;
+    color: $drkBlue;
+    position: absolute;
+    z-index: 9;
+    top: 47px;
+    right: 0;
+    letter-spacing: 1.5px;
+  }
+}
+.media {
+  h3 {
+   
+
+    background: linear-gradient(251.11deg, #4d1571 12.75%, #312fa3 92.49%);
+  }
+  .price {
+    background-color: $secondViolet;
+    color: $white;
+  }
+}
+.vip {
+  h3 {
+    background: linear-gradient(270deg, #994392 0%, #733e91 100%);
+  }
+  .price{
+    background-color: $deepViloet;
+    color: $white;
+  }
+}
+.ticketCard {
+  background-color: $black;
+  padding-bottom: 60px;
+  width: 270px;
+  max-width: 100%;
+  clip-path: polygon(
+    99.816% 0.025%,
+    100% 94.71%,
+    93.516% 100%,
+    6.852% 100%,
+    0.368% 94.71%,
+    0.184% 0.025%,
+    99.816% 0.025%
+  );
+  position: relative;
+  height: 360px;
+
+  ul {
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-top: 50px;
+
+    li {
+      width: 80%;
+      line-height: 1.2;
+      position: relative;
+      padding-bottom: 20px;
+      &:first-child {
+        padding-bottom: 20px;
+      }
+      &:not(:first-child) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        &::before {
+          display: none;
+        }
+      }
+
+      .icon {
+        display: block;
+        width: 8px;
+        height: 10px;
+        background-image: url("../images/Bitmap-icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &::before {
+        @include before();
+        height: 1px;
+        bottom: 0;
+        top: auto;
+        background-image: linear-gradient(
+          to right,
+          rgba(#a14c9a, 1),
+          rgba(#9d4796, 0.8),
+          rgba(#994392, 0.75),
+          rgba(#994392, 0.6),
+          rgba(#994392, 0.5),
+          rgba(#994392, 0.3),
+          rgba(#994392, 0)
+        );
+      }
+      span:not(.icon) {
+        padding-left: 10px;
+      }
+    }
+  }
+  .GetTicket {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: $lightYellow;
+  }
+}
