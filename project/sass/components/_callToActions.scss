@@ -39,3 +39,20 @@
 
 
 }
+.learnmoreBtn{
+    clip-path: polygon( 0% 35.484%,11.989% 0%,23.161% 0%,26.158% 9.677%,97.003% 9.677%,100% 18.548%,99.727% 62.903%,87.466% 100%,5.995% 100%,0% 83.871%,0% 35.484% );
+    background-color: $primaryPink;
+    color: $white;
+    width: 136px;
+    height: 47px;
+    text-transform: uppercase;
+    display: block;
+    font-family: 'lamaExtraBold';
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.85px;
+    margin-top: 5px;
+
+}

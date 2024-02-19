@@ -120,6 +120,14 @@ $classes: (
       width: 85%;
       margin-left: auto;
       margin-right: auto;
+      >li{
+        >a{
+          transition: .25s;
+          &:hover{
+            color: $violet;
+          }
+        }
+      }
     }
   }
 }
@@ -188,6 +196,7 @@ $classes: (
     background-image: url("../images/Bitmap-timer.png");
     width: 293px;
     height: 120px;
+    background-repeat: no-repeat;
     .aliging {
       @include cntrElmnt();
       transform: translate(-53%, -50%);

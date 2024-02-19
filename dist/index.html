@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games </title>
+    <title>Games</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body> 
@@ -83,9 +84,9 @@
         </div>
       </div>
     </div>
-    <div class="getTickes paddingSections showItems">
+    <div class="getTickes paddingSections showItems overlayBottomTop" style="background-image: url(images/ticketBK.png)">
       <div class="line"></div>
-      <div class="container-def">
+      <div class="container-def shrink">
         <div class="heading-ticket showItems mrb-50">
           <div class="d-flex align-items-center justify-content-between">
             <h2 class="h2Heading">Get your tickets</h2>
@@ -95,53 +96,178 @@
           </div>
         </div>
         <div class="containerTicketCard d-flex justify-content-between showItems ">
-                    <div class="earlyBird ">
-                      <div class=" headings">
-                        <h3 class="text-uppercase white fontRajdhani size-30 weight-600 ltrspac-3 text-center">early Bird</h3><span class="border"></span><span class="backLine"></span>
-                        <p class="price size-22 fontRajdhani weight-700 d-flex align-items-center justify-content-center">150<span class="d-inline-block mrl-10"> AED</span></p>
-                      </div>
-                      <div class="ticketCard">
-                        <ul>
-                          <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Access to all days of the festival</span></li>
-                          <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Kids Area and F&amp;B</span></li>
-                          <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Play beyond access </span></li>
-                          <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Cosplay competitions</span></li>
-                        </ul><a class="GetTicket" href="#"> 
-                          <p><span>Get your</span><span> tickets</span></p></a>
-                      </div>
-                    </div>
-                    <div class="media ">
-                      <div class=" headings">
-                        <h3 class="text-uppercase white fontRajdhani size-30 weight-600 ltrspac-3 text-center">media</h3><span class="border"></span><span class="backLine"></span>
-                        <p class="price size-22 fontRajdhani weight-700 d-flex align-items-center justify-content-center">250<span class="d-inline-block mrl-10"> AED</span></p>
-                      </div>
-                      <div class="ticketCard">
-                        <ul>
-                          <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Press conference access </span></li>
-                          <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Media Badge  </span></li>
-                          <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Free food &amp; drinks </span></li>
-                        </ul><a class="GetTicket" href="#"> 
-                          <p><span>Get your</span><span> tickets</span></p></a>
-                      </div>
-                    </div>
-                    <div class="vip ">
-                      <div class=" headings">
-                        <h3 class="text-uppercase white fontRajdhani size-30 weight-600 ltrspac-3 text-center">VIP</h3><span class="border"></span><span class="backLine"></span>
-                        <p class="price size-22 fontRajdhani weight-700 d-flex align-items-center justify-content-center">2000<span class="d-inline-block mrl-10"> AED</span></p>
-                      </div>
-                      <div class="ticketCard">
-                        <ul>
-                          <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Access to all days of the festival </span></li>
-                          <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Meet &amp; greet</span></li>
-                          <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Investors access </span></li>
-                          <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">VIP badge </span></li>
-                        </ul><a class="GetTicket" href="#"> 
-                          <p><span>Get your</span><span> tickets</span></p></a>
-                      </div>
-                    </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                              <div class="earlyBird ">
+                                <div class=" headings">
+                                  <h3 class="text-uppercase white fontRajdhani size-30 weight-600 ltrspac-3 text-center">early Bird</h3><span class="border"></span><span class="backLine"></span>
+                                  <p class="price size-22 fontRajdhani weight-700 d-flex align-items-center justify-content-center">150<span class="d-inline-block mrl-10"> AED</span></p>
+                                </div>
+                                <div class="ticketCard">
+                                  <div class="card-lists">
+                                    <ul class="frontList">
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Access to all days of the festival</span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Kids Area and F&amp;B</span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Play beyond access </span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Cosplay competitions</span></li>
+                                    </ul>
+                                    <ul class="backList">
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Hover to all days of the festival</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Kids Area and F&amp;B</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">no Play beyond access</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Cosplay competitions</span></li>
+                                    </ul>
+                                  </div><a class="GetTicket" href="#"> 
+                                    <p><span>Get your</span><span> tickets</span></p></a>
+                                </div>
+                              </div>
+              </div>
+              <div class="swiper-slide">
+                              <div class="media ">
+                                <div class=" headings">
+                                  <h3 class="text-uppercase white fontRajdhani size-30 weight-600 ltrspac-3 text-center">media</h3><span class="border"></span><span class="backLine"></span>
+                                  <p class="price size-22 fontRajdhani weight-700 d-flex align-items-center justify-content-center">250<span class="d-inline-block mrl-10"> AED</span></p>
+                                </div>
+                                <div class="ticketCard">
+                                  <div class="card-lists">
+                                    <ul class="frontList">
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Press conference access </span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Media Badge  </span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Free food &amp; drinks </span></li>
+                                    </ul>
+                                    <ul class="backList">
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Hover to all days of the festival</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Kids Area and F&amp;B</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Play beyond access </span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">hover Cosplay competitions</span></li>
+                                    </ul>
+                                  </div><a class="GetTicket" href="#"> 
+                                    <p><span>Get your</span><span> tickets</span></p></a>
+                                </div>
+                              </div>
+              </div>
+              <div class="swiper-slide">
+                              <div class="vip ">
+                                <div class=" headings">
+                                  <h3 class="text-uppercase white fontRajdhani size-30 weight-600 ltrspac-3 text-center">VIP</h3><span class="border"></span><span class="backLine"></span>
+                                  <p class="price size-22 fontRajdhani weight-700 d-flex align-items-center justify-content-center">2000<span class="d-inline-block mrl-10"> AED</span></p>
+                                </div>
+                                <div class="ticketCard">
+                                  <div class="card-lists">
+                                    <ul class="frontList">
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Access to all days of the festival </span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Meet &amp; greet</span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Investors access </span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">VIP badge </span></li>
+                                    </ul>
+                                    <ul class="backList">
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block"> GameExpo brings players together to enjoy some of the hottest games in the world while showcasing the best talent from the region</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Inclusive of tournaments and main gaming areas.</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Tickets from 24-25 June will include access to Play Beyond, the first influencer gaming tournament in the region.</span></li>
+                                    </ul>
+                                  </div><a class="GetTicket" href="#"> 
+                                    <p><span>Get your</span><span> tickets</span></p></a>
+                                </div>
+                              </div>
+              </div>
+              <div class="swiper-slide">
+                              <div class="earlyBird ">
+                                <div class=" headings">
+                                  <h3 class="text-uppercase white fontRajdhani size-30 weight-600 ltrspac-3 text-center">early Bird</h3><span class="border"></span><span class="backLine"></span>
+                                  <p class="price size-22 fontRajdhani weight-700 d-flex align-items-center justify-content-center">150<span class="d-inline-block mrl-10"> AED</span></p>
+                                </div>
+                                <div class="ticketCard">
+                                  <div class="card-lists">
+                                    <ul class="frontList">
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Access to all days of the festival</span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Kids Area and F&amp;B</span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Play beyond access </span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Cosplay competitions</span></li>
+                                    </ul>
+                                    <ul class="backList">
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Hover to all days of the festival</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Kids Area and F&amp;B</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">no Play beyond access</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Cosplay competitions</span></li>
+                                    </ul>
+                                  </div><a class="GetTicket" href="#"> 
+                                    <p><span>Get your</span><span> tickets</span></p></a>
+                                </div>
+                              </div>
+              </div>
+              <div class="swiper-slide">
+                              <div class="media ">
+                                <div class=" headings">
+                                  <h3 class="text-uppercase white fontRajdhani size-30 weight-600 ltrspac-3 text-center">media</h3><span class="border"></span><span class="backLine"></span>
+                                  <p class="price size-22 fontRajdhani weight-700 d-flex align-items-center justify-content-center">250<span class="d-inline-block mrl-10"> AED</span></p>
+                                </div>
+                                <div class="ticketCard">
+                                  <div class="card-lists">
+                                    <ul class="frontList">
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Press conference access </span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Media Badge  </span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Free food &amp; drinks </span></li>
+                                    </ul>
+                                    <ul class="backList">
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Hover to all days of the festival</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Kids Area and F&amp;B</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Play beyond access </span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">hover Cosplay competitions</span></li>
+                                    </ul>
+                                  </div><a class="GetTicket" href="#"> 
+                                    <p><span>Get your</span><span> tickets</span></p></a>
+                                </div>
+                              </div>
+              </div>
+              <div class="swiper-slide">
+                              <div class="vip ">
+                                <div class=" headings">
+                                  <h3 class="text-uppercase white fontRajdhani size-30 weight-600 ltrspac-3 text-center">VIP</h3><span class="border"></span><span class="backLine"></span>
+                                  <p class="price size-22 fontRajdhani weight-700 d-flex align-items-center justify-content-center">2000<span class="d-inline-block mrl-10"> AED</span></p>
+                                </div>
+                                <div class="ticketCard">
+                                  <div class="card-lists">
+                                    <ul class="frontList">
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Access to all days of the festival </span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Meet &amp; greet</span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">Investors access </span></li>
+                                      <li class="lama-light white size-15 d-flex align-items-center"><span class="icon"></span><span class="d-inline-block">VIP badge </span></li>
+                                    </ul>
+                                    <ul class="backList">
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block"> GameExpo brings players together to enjoy some of the hottest games in the world while showcasing the best talent from the region</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Inclusive of tournaments and main gaming areas.</span></li>
+                                      <li class="lama-light white size-12 d-flex align-items-start"><span class="icon"></span><span class="d-inline-block">Tickets from 24-25 June will include access to Play Beyond, the first influencer gaming tournament in the region.</span></li>
+                                    </ul>
+                                  </div><a class="GetTicket" href="#"> 
+                                    <p><span>Get your</span><span> tickets</span></p></a>
+                                </div>
+                              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <div class="changeGame paddingSections overlayBottomTop" style="background-image: url(images/changeGameBk.png)">
+      <div class="line"> </div>
+      <div class="container-def shrink">
+        <div class="d-flex align-items-center justify-content-between"><img src="images/changeGame.png">
+          <div class="content">
+            <h2 class="h2Heading">WE ARE CHANGING THE GAME! </h2>
+            <h3 class="lama-bold size-16 white mtop-30 mrb-35 ltrspac-2">Dubai Esports And Games Festival</h3>
+            <p class="lama-reg size-15 white mrb-35 ltrspac-2">Founded in 2022, the Dubai Esports &amp; Games Festival celebrates all things gaming. By combining the best in competitive video games with electrifying experiences and next-gen talent</p>
+            <p class="lama-reg size-15 white mrb-35 ltrspac-2">The annual festival aims to become a regular fixture in the international circuit. It's time to play to infinity and beyond!</p><a class="learnmoreBtn" href="#"> 
+              <p>Learn more</p></a>
+          </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
