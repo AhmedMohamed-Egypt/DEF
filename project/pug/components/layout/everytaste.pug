@@ -1,0 +1,35 @@
+- var card = {"26000x":"visitors", "14x" : "E-sports competitions","1800x":"industry experts","2000x":"Meet-To-Match","40x":"Exhibitors"}
+- var gameList = [{title:"GAming experiences",text:"A Place For Extraordinary Gaming Adventures!",src:"images/game-1.png"}, {title:"Education" ,text: "The First Ever Influencer-Led Esports Tournament!",src:"images/game-3.png"},{title:"GAme Expo summit",text:"To inspire the next generation of industry experts",src:"images/game-2.png"}]
+- var imgs = ['img1','img2','img3']
+mixin cards(cardList)
+
+  each val,key in cardList
+    li(class="d-flex flex-column pdtop-28  cardItem-numbers")
+      div.cardcontainer
+
+        p(class="fontRajdhani size-37 white weight-700 cardItem-numbers__number")= key
+        p(class="  white size-16 lama-bold" )= val
+      div.cover
+mixin tasteGame(gameList)
+  each val in gameList
+    div(class="gameCard")
+      div.imgContainer
+       div.imgCover
+        img(src=`${val.src}`)
+       div.cover
+      div.bottomcontent
+       h3(class="text-uppercase fontRajdhani size-22 white weight-700")= val.title
+       h4(class="lama-bold size-16 white upperCaseFirstLtr" )= val.text
+       include ../general-components/learnmore.pug
+      
+
+
+div(class="everytaste overlayBottomTop drkBluebkground paddingSections" style='background-image: url(images/every-taste.png)')
+  .container-def
+    .cards-definitions
+      ul(class="d-flex align-items-center")
+        +cards(card)
+    h2(class="h2Heading text-center pdtop-50 mtop-50 mrb-50") We have something for every taste
+    .gameList(class="d-flex justify-content-between pdtop-50")
+      +tasteGame(gameList)
+

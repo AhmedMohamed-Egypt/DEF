@@ -84,7 +84,13 @@ display: block;
 .text-center{
     text-align: center;
 }
+.upperCaseFirstLtr{
+   text-transform: capitalize;
+}
 /*helpers for sections*/
+.drkBluebkground{
+    background-color: $drkBlue;
+}
 .overlayBottomTop{
     position: relative;
 

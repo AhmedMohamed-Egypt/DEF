@@ -28,4 +28,17 @@ const swiper = new Swiper('.getTickes  .swiper', {
         prevEl: '.swiper-button-prev',
       },
   })
-  
+  //format Number 
+  const formatNumber = ()=>{
+    const allNumbers = document.querySelectorAll(".cardItem-numbers__number")
+    allNumbers.forEach((item)=>{
+      if(item){
+        const indexItem = item.textContent.indexOf("x")
+        const number = Number(item.textContent.slice(0,indexItem))
+        console.log(number)
+       
+        item.innerHTML = number.toLocaleString('en-US');
+      }
+    })
+  }
+  formatNumber()
