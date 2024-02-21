@@ -2,8 +2,21 @@
     
     background-color: $drkBlue;
     position: relative;
-    background-position: center;
+    //background-position: center;
     background-size: cover;
+    padding-top: 200px;
+    &::before{
+      z-index: -1;
+    }
+  
+    img{
+      position: absolute;
+      bottom: -55px;
+      z-index: 999;
+    }
+    .content{
+      transform: translate(700px, 20px);
+    }
     .line{
        @extend %line;
         background-image: url("../images/binkLine.png");
@@ -12,6 +25,7 @@
    .h2Heading{
     width: 380px;
     max-width: 100%;
+    line-height: 1;
    }
    .content{
   

@@ -2,6 +2,9 @@
   position: relative;
   background-size: cover;
   background-position: center;
+  &::after{
+    z-index: -1;
+  }
   
 .cards-definitions {
   position: relative;
