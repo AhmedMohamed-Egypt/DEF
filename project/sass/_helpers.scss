@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     height: 70px;
     background-size: contain;
+    z-index: 9999;
 }
 
 *{
@@ -118,4 +119,9 @@ display: block;
     
     
       }
+}
+%customShrink{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }

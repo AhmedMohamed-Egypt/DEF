@@ -1,24 +1,61 @@
-$colors:$black,$thridViolet,$drkviolet,$primaryPink;
-.whatsHappening{
-    .tabContainer{
-        .ultab{
-            @each $current-color in $colors{
-                $i: index($colors, $current-color);
-                li:nth-child(#{$i}){
-                    letter-spacing: .25px;
-                    width: 284px;
-                    background-color: $current-color;
-                    width: 284px;
-                    padding: 10px 0;
-                    text-align: center;
-                    border-radius: 14px 14px 0px 0px;
-                    &.active{
-                        background-color: $lightYellow;
-                        color: $black;
-                    }
-                }
-            }
-           
-        }
+$colors: $black, $thridViolet, $drkviolet, $primaryPink;
+.whatsHappening {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .line{
+        @extend %line;
+        background-image: url("../images/bigline.png");
     }
+  .tabContainer {
+    .ultab {
+        li{
+            letter-spacing: 0.25px;
+            width: 284px;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 14px 14px 0px 0px;
+            cursor: pointer;
+        }
+      @extend %customShrink;
+      @each $current-color in $colors {
+        $i: index($colors, $current-color);
+        li:nth-child(#{$i}) {
+        
+          background-color: $current-color;
+          &.active {
+            background-color: $lightYellow;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+  .cardsContainer {
+    width: 95%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.146165) 53.37%,
+      #000000 100%
+    );
+    border-radius: 15px;
+    position: relative;
+    .cardHappening {
+        
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+        max-height: 0;
+      &.active {
+       
+        visibility: visible;
+        opacity: 1;
+        max-height: 1000px;
+      }
+    }
+  }
 }

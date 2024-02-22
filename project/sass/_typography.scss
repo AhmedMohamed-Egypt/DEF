@@ -36,6 +36,9 @@
   font-family: 'lamaLight';
   src: url("../fonts/LamaSans-Light.ttf");
 }
+.lightLtrSpacing{
+  letter-spacing: .25px;
+}
 
 .ltrspacing{
   letter-spacing: 1.5px;
@@ -65,7 +68,9 @@
   font-family: "Rajdhani", sans-serif;
 
 }
-
+.txtLHeight{
+  line-height: 1.6;
+}
 /*h2 heading Title */
 .h2Heading{
   font-family: "Rajdhani", sans-serif;

@@ -1,0 +1,21 @@
+.cardHappening {
+   @extend %customShrink;
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 15px;
+   .content{
+    h3{
+     max-width: 450px;
+    }
+    >p{
+        width: 85%;
+        line-height: 1.5;
+    }
+   }
+
+    img{
+        width: 350px;
+        max-width: 100%;
+    }
+   
+}
