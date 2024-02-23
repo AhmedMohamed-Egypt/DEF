@@ -11,6 +11,14 @@
     background-size: contain;
     z-index: 9999;
 }
+.yellowLine{
+    @extend %line;
+    background-image: url("../images/bigline.png");
+}
+.pinkLine{
+    background-image: url("../images/binkLine.png");
+    @extend %line;
+}
 
 *{
     margin: 0;

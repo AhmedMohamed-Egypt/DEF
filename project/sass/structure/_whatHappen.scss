@@ -2,10 +2,13 @@ $colors: $black, $thridViolet, $drkviolet, $primaryPink;
 .whatsHappening {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center -50px;
     .line{
         @extend %line;
         background-image: url("../images/bigline.png");
+    }
+    &::after{
+      height: 50%;
     }
   .tabContainer {
     .ultab {
@@ -16,12 +19,12 @@ $colors: $black, $thridViolet, $drkviolet, $primaryPink;
             text-align: center;
             border-radius: 14px 14px 0px 0px;
             cursor: pointer;
+            transition: .5s
         }
       @extend %customShrink;
       @each $current-color in $colors {
         $i: index($colors, $current-color);
         li:nth-child(#{$i}) {
-        
           background-color: $current-color;
           &.active {
             background-color: $lightYellow;
@@ -46,15 +49,12 @@ $colors: $black, $thridViolet, $drkviolet, $primaryPink;
     position: relative;
     .cardHappening {
         
-        visibility: hidden;
+        display: none;
+        transition: all .5s ease-in-out;
         opacity: 0;
-        transition: visibility 0s, opacity 0.5s linear;
-        max-height: 0;
       &.active {
-       
-        visibility: visible;
         opacity: 1;
-        max-height: 1000px;
+       display: flex;
       }
     }
   }
