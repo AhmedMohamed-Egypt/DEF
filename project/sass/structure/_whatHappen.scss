@@ -19,7 +19,8 @@ $colors: $black, $thridViolet, $drkviolet, $primaryPink;
             text-align: center;
             border-radius: 14px 14px 0px 0px;
             cursor: pointer;
-            transition: .5s
+            transition: .2s;
+            overflow:hidden;
         }
       @extend %customShrink;
       @each $current-color in $colors {
@@ -27,6 +28,7 @@ $colors: $black, $thridViolet, $drkviolet, $primaryPink;
         li:nth-child(#{$i}) {
           background-color: $current-color;
           &.active {
+          
             background-color: $lightYellow;
             color: $black;
           }

@@ -79,7 +79,7 @@ function tabList() {
     item.addEventListener("click", () => {
       
       for (let i = 0; i < sections.length; i++) {
-       // sections[i].classList.remove("active");
+      
         ulTabs[i].classList.remove('active')
        // animateDisplay(sections[i], 'active', 'none', 600)
        sections[i].style.display="none"
