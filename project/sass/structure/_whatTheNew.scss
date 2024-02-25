@@ -1,0 +1,33 @@
+%postion{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cardImage{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    .main{
+        width: 400px;
+        height: 400px;
+       
+        @extend %postion;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        background-image: linear-gradient(to right, #994392, #c75681, #df7874, #e79e75, #e7c589);
+    }
+
+.bkground{
+    border-radius: 15px;
+    background-color: $black;
+    @extend %postion;
+    width: 96%;
+    height: 96%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+}
