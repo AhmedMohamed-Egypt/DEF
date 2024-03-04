@@ -20,6 +20,7 @@
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-watch": "^5.0.1",
+    "json-server": "^1.0.0-alpha.23",
     "parser": "^0.1.4",
     "postcss-scss": "^4.0.9",
     "sass": "^1.70.0",

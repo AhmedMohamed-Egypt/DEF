@@ -54,5 +54,14 @@
     align-items: center;
     letter-spacing: 1.85px;
     margin-top: 5px;
+    p{
+        margin-top: 5px;
+    }
 
+}
+.yellow{
+    .learnmoreBtn{
+        background-color: $lightYellow;
+        color: $drkBlue;
+    }
 }

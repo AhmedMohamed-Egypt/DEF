@@ -1,33 +1,69 @@
-%postion{
-    position: absolute;
-    top: 0;
-    left: 0;
+%postion {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
-.cardImage{
+.whatTheNew {
+ // background-color: $drkBlue;
+height: 800px;
+  background-size: cover;
+  background-position: center;
+  .custom-shrink{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+  .education-sliding {
+    background-color: $primaryPink;
+    width: 610px;
+    max-width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+  .cardImage {
     position: relative;
-    width: 400px;
-    height: 400px;
-    .main{
-        width: 400px;
-        height: 400px;
-       
-        @extend %postion;
-        width: 100%;
-        height: 100%;
-        border-radius: 15px;
-        background-image: linear-gradient(to right, #994392, #c75681, #df7874, #e79e75, #e7c589);
+    min-width: 290px;
+    height: 320px;
+    transform: translate(-120px, 0px);
+    .main {
+      width: 400px;
+      height: 400px;
+      @extend %postion;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      background-image: linear-gradient(
+        to right,
+        #994392,
+        #c75681,
+        #df7874,
+        #e79e75,
+        #e7c589
+      );
     }
 
-.bkground{
-    border-radius: 15px;
-    background-color: $black;
-    @extend %postion;
-    width: 96%;
-    height: 96%;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-
+    .bkground {
+      border-radius: 15px;
+      background-color: $black;
+      @extend %postion;
+      width: 96%;
+      height: 96%;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-size: cover;
+      background-position: center;
+    }
+    img {
+      // @extend %postion;
+    }
+  }
+  .cardContent {
+    transform: translate(-80px, 0px);
+    > p {
+      line-height: 1.5;
+      letter-spacing: 1px;
+    }
+  }
 }
