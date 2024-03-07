@@ -4,7 +4,7 @@ div(class="headerDEF position-relative mtop-15 pdtop-12 pdb-12")
     img(src="images/logo.png")
    .navbar-def
     ul(class="d-flex justify-content-between")
-      each val, index in ['Home','Festival Details','Gaming Experiences','Game Expo Summit','Education','News']
+      each val, index in ['About','Festival Details','Gaming Experiences','Game Expo Summit','Education','News']
        li
         a(href="#" class=`${index===0?'active':''} lama-bold white size-12 ltrspacingNav`)= val
    include ../../general-components/getTicket.pug
