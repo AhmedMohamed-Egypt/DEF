@@ -2,16 +2,17 @@ div(class="whatTheNew drkBluebkground paddingSections overlayBottomTop" style=("
  .pinkLine
  .container-whatTheNew
   h2(class="h2Heading showItems mrb-40") What's New This Year?
-  .swiper
-   .swiper-wrapper
-    - for(let i = 0 ; i < 4;i++)
-     .swiper-slide 
-      include ./subcomp/whatTheNewCard.pug
-   div.swipperNav 
-    .swiper-pagination
+  div(class="education-sliding pdtop-50 pdb-50 showItems")
+   .swiper
+    .swiper-wrapper
+     - for(let i = 0 ; i < 4;i++)
+      .swiper-slide 
+       include ./subcomp/whatTheNewCard.pug
+    div.swipperNav 
+     .swiper-pagination
    
-    .swiper-button-prev
-    .swiper-button-next
+     .swiper-button-prev
+     .swiper-button-next
   
        
       

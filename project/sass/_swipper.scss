@@ -62,14 +62,18 @@
   background-position: center;
 }
 .whatTheNew {
+  .swiper {
+    transform: translateX(-150px);
+    width: calc(100% + 150px);
+  }
   .swipperNav {
     position: relative;
     width: 200px;
     margin: auto;
-    transform: translate(185px,-70px);
+    transform: translate(225px, -26px);
     z-index: 9999999;
     .swiper-pagination{
-      top: -10px;
+      top: -7px;
       .swiper-pagination-bullet{
         width: 12px;
         height: 12px;
