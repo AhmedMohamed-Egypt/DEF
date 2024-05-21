@@ -8,18 +8,22 @@
 height: 800px;
   background-size: cover;
   background-position: center;
-  .custom-shrink{
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%;
+  .h2Heading {
+    width: 610px;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 20px;
   }
+ .container-whatTheNew{
+  width: 80%;
+ }
   .education-sliding {
     background-color: $primaryPink;
     width: 610px;
     max-width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    margin: auto;
   }
   .cardImage {
     position: relative;

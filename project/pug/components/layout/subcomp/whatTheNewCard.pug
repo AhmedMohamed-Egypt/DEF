@@ -1,0 +1,17 @@
+-var data = [{heading:"Education",img:"images/card-what-new.png",text1:"Calling all school and university students! Participate in our Minecraft Challenge and showcase your creativity, problem-solving skills, and teamwork",headingtxt:"Join us for an adventure in the world of Minecraft –",restTxt:"where your imagination is the limit. Sign up now and let the building begin!"}]
+ div(class="education-sliding pdtop-50 pdb-50 showItems")
+   div(class="d-flex")
+    each val,index in data 
+     div.cardImage
+      .main
+      .bkground(style=`background-image:url(${val.img})`)
+       
+      
+     div.cardContent
+      h2(class="white fontRajdhani size-22 text-uppercase")= val.heading 
+      p(class="white lama-light size-16  mrb-30 mtop-20")
+       span= val.text1 
+       b= val.headingtxt
+       span= val.restTxt
+      div.yellow
+       include ./../../general-components/joinnow.pug

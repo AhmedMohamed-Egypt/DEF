@@ -25,6 +25,29 @@ const swiper = new Swiper(".getTickes  .swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+//get src for hero image to use instead of html for CMS integration
+const swiperNew = new Swiper(".whatTheNew .swiper", {
+  // Default parameters
+  slidesPerView: "auto",
+  spaceBetween: 5,
+  speed: 500,
+
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
 //format Number
 const formatNumber = () => {
   const allNumbers = document.querySelectorAll(".cardItem-numbers__number");
