@@ -24,11 +24,11 @@ const swiper = new Swiper(".getTickes  .swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});
-//get src for hero image to use instead of html for CMS integration
-const swiperSponsors = new Swiper(".officialSponsors  .swiper", {
+});//education-sliding 
+
+const swiperEducation = new Swiper(".education-sliding  .swiper", {
   // Default parameters
-  slidesPerView: 5,
+  slidesPerView: 1,
   spaceBetween: 5,
   speed: 500,
 
@@ -45,6 +45,29 @@ const swiperSponsors = new Swiper(".officialSponsors  .swiper", {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+
+});
+
+const swiperSponsors = new Swiper(".officialSponsors  .swiper", {
+  // Default parameters
+  slidesPerView: 5,
+  spaceBetween: 5,
+  speed: 500,
+
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    
+  },
+  pagination: {
+    el: '.officialSponsors .swiper-pagination',
+    clickable:true
+  },
+  navigation: {
+    nextEl: '.officialSponsors .swiper-button-next',
+    prevEl: '.officialSponsors .swiper-button-prev',
   },
 
 });
