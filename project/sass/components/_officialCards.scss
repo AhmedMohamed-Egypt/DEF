@@ -1,0 +1,10 @@
+.officialCard{
+    width: 225px;
+    height: 124px;
+    background-image: url("../images/cover-card-official.png");
+    position: relative;
+    img{
+        @include cntrElmnt();
+        width: 100px;
+    }
+}

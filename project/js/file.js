@@ -26,9 +26,9 @@ const swiper = new Swiper(".getTickes  .swiper", {
   },
 });
 //get src for hero image to use instead of html for CMS integration
-const swiperNew = new Swiper(".whatTheNew .swiper", {
+const swiperSponsors = new Swiper(".officialSponsors  .swiper", {
   // Default parameters
-  slidesPerView: "auto",
+  slidesPerView: 5,
   spaceBetween: 5,
   speed: 500,
 
@@ -48,6 +48,9 @@ const swiperNew = new Swiper(".whatTheNew .swiper", {
   },
 
 });
+//officialSponsors 
+
+
 //format Number
 const formatNumber = () => {
   const allNumbers = document.querySelectorAll(".cardItem-numbers__number");
