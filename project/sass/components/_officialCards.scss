@@ -3,6 +3,7 @@
     height: 124px;
     background-image: url("../images/cover-card-official.png");
     position: relative;
+    cursor: pointer;
     img{
         @include cntrElmnt();
         width: 100px;

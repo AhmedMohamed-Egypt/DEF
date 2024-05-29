@@ -1,13 +1,14 @@
 - var logos = [{img:"images/official-cards/official-1.png"},{img:"images/official-cards/official-2.png"},{img:"images/official-cards/official-3.png"},{img:"images/official-cards/official-1.png"},{img:"images/official-cards/official-2.png"},{img:"images/official-cards/official-3.png"}]
 .officialSponsors.drkBluebkground.paddingSections.overlayBottomTop
- h2(class="h2Heading mrb-25") OFFICIAL SPONSORS
- .swiper 
-  .swiper-wrapper 
-   - for(let i = 0 ; i < logos.length;i++)
-    .swiper-slide
-     .officialCard 
-      img(src=`${logos[i].img}`)
- .pagination
+  .yellowLine
+  h2(class="h2Heading mrb-25") OFFICIAL SPONSORS
+  .swiper 
+   .swiper-wrapper 
+    - for(let i = 0 ; i < logos.length;i++)
+     .swiper-slide
+      .officialCard 
+       img(src=`${logos[i].img}`)
+  .pagination
    .swiper-button-next.arrows
    .swiper-button-prev.arrows
    

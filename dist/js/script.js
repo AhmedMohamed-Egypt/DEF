@@ -21,8 +21,8 @@ const swiper = new Swiper(".getTickes  .swiper", {
     },
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".getTickes .swiper-button-next",
+    prevEl: ".getTickes .swiper-button-prev",
   },
 });//education-sliding 
 
@@ -30,24 +30,29 @@ const swiperEducation = new Swiper(".education-sliding  .swiper", {
   // Default parameters
   slidesPerView: 1,
   spaceBetween: 5,
-  speed: 500,
-
-
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
     
   },
   pagination: {
-    el: '.swiper-pagination',
-    clickable:true
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    el: '.education-sliding .swiper-pagination',
+    clickable: true,
+ 
   },
 
+  hashNavigation: {
+    watchState: true,
+},
+  navigation: {
+    nextEl: '.education-sliding .swiper-button-next',
+    prevEl: '.education-sliding .swiper-button-prev',
+  },
+  
+
 });
+
+
 
 const swiperSponsors = new Swiper(".officialSponsors  .swiper", {
   // Default parameters
@@ -71,6 +76,7 @@ const swiperSponsors = new Swiper(".officialSponsors  .swiper", {
   },
 
 });
+
 //officialSponsors 
 
 

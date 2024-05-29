@@ -1,0 +1,25 @@
+$classes: (
+  "youtube": $youtube,
+  "insta": $insta,
+  "facebook": $facebook,
+  "twitter": $twitter,
+  "lnkedIn": $lnkedIn,
+  "tikeTok": $tikeTok,
+  "twitch": $twitch,
+  "reddit": $reddit,
+  "snapChat": $snapChat,
+);
+
+.socialLinks{
+    a.linkTopBar {
+        width: 19px;
+        height: 13px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      @each $class, $bkground in $classes {
+        .#{$class} {
+          background-image: $bkground;
+        }
+      }
+}

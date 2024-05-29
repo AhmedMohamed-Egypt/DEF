@@ -63,6 +63,9 @@ display: block;
 .flex-column{
     flex-direction: column;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .align-items-start{
     align-items: flex-start;
 }
@@ -87,6 +90,9 @@ display: block;
 .justify-content-center{
     justify-content: center;
 }
+.justify-content-around{
+    justify-content: space-around;
+}
 .text-uppercase{
     text-transform: uppercase;
 }
@@ -95,6 +101,9 @@ display: block;
 }
 .upperCaseFirstLtr{
    text-transform: capitalize;
+}
+.w-100{
+    width: 100%;
 }
 /*helpers for sections*/
 .drkBluebkground{

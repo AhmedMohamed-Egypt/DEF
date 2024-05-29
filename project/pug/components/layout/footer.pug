@@ -1,0 +1,50 @@
+- var linksOne = ["Register Now","About","Privacy","Terms of use"]
+- var linksTwo = ["Tickets","Contact us","Festival Details ","Gaming Experiences","Education","News"]
+- var linksPrivacy = ["Terms of Use","Privacy Notice"];
+mixin list(mainlist)
+ ul 
+  each val in mainlist 
+   li 
+    a(href="#" class="lama-reg size-12 white mrb-30 d-block")=val
+
+.footerGame.drkBluebkground 
+ .container-def 
+  div(class="maincontainer")
+   .footerGame__container
+    div(class="d-flex  flex-wrap justify-content-between")
+     div 
+      img(src="images/logo-footer.png")
+      p(class="lama-reg white size-12 footerGame__container--txt txtLHeight mtop-25 mrb-25") Dubai Esports &amp; Games Festival (DEF) 2023 came back with a bang to bring things to the next level with five days of action-packed events and activities. 
+      h3(class="drkviolet lama-bold size-15 mrb-15 text-uppercase") Join the conversation
+      include ./subcomp/socialLinks.pug
+     div 
+      h3(class="drkviolet size-15 lama-bold mrb-25") KNOW MORE
+      +list(linksOne)
+     div 
+      h3(class="drkviolet size-15 lama-bold mrb-25") QUICK LINKS
+      +list(linksTwo)
+     div(class="d-flex flex-column justify-content-around")
+      div(class="footerGame__container--logogame") 
+        img(src="images/game-footer.png")
+      div(class="footerGame__container--register")
+       a(href="#" class="drkblue lama-bold size-10 text-uppercase") Register now
+     div(class="w-100 d-flex justify-content-between")
+      p(class="white size-8 lama-reg mtop-15") &copy; Copyright 2024, Dubai Esports 
+      ul(class="d-flex ")
+       each val,index in linksPrivacy
+        li(class=`${index===(linksPrivacy.length-1)?"mrl-50":""}`)
+         a(href="#" class="lama-reg size-8 white mrb-10 d-block")=val
+   span.maincontainer--leftbox
+   span.maincontainer--rightbox
+      
+     
+    
+
+
+
+
+
+
+   
+
+

@@ -32,17 +32,7 @@ $classes: (
   }
 }
 .heroTopBar {
-  a.linkTopBar {
-    width: 19px;
-    height: 13px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  @each $class, $bkground in $classes {
-    .#{$class} {
-      background-image: $bkground;
-    }
-  }
+
   .rightTobBar {
     width: 350px;
     max-width: 100%;
