@@ -1,0 +1,11 @@
+//Design for Desktop 
+@include between(1200,1439){
+    .changeGame img{
+     width: 350px;
+     bottom: 0;
+     top: 150px;
+    }
+    .changeGame .content{
+        transform: translate(500px, 20px);
+    }
+}

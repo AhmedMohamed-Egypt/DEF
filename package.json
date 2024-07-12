@@ -29,6 +29,7 @@
     "stylelint-config-standard-scss": "^13.0.0"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "pug": "^3.0.2"

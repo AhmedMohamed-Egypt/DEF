@@ -24,7 +24,7 @@ const swiper = new Swiper(".getTickes  .swiper", {
     nextEl: ".getTickes .swiper-button-next",
     prevEl: ".getTickes .swiper-button-prev",
   },
-});//education-sliding 
+}); //education-sliding
 
 const swiperEducation = new Swiper(".education-sliding  .swiper", {
   // Default parameters
@@ -33,26 +33,20 @@ const swiperEducation = new Swiper(".education-sliding  .swiper", {
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
-    
   },
   pagination: {
-    el: '.education-sliding .swiper-pagination',
+    el: ".education-sliding .swiper-pagination",
     clickable: true,
- 
   },
 
   hashNavigation: {
     watchState: true,
-},
-  navigation: {
-    nextEl: '.education-sliding .swiper-button-next',
-    prevEl: '.education-sliding .swiper-button-prev',
   },
-  
-
+  navigation: {
+    nextEl: ".education-sliding .swiper-button-next",
+    prevEl: ".education-sliding .swiper-button-prev",
+  },
 });
-
-
 
 const swiperSponsors = new Swiper(".officialSponsors  .swiper", {
   // Default parameters
@@ -60,25 +54,52 @@ const swiperSponsors = new Swiper(".officialSponsors  .swiper", {
   spaceBetween: 5,
   speed: 500,
 
-
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
-    
   },
   pagination: {
-    el: '.officialSponsors .swiper-pagination',
-    clickable:true
+    el: ".officialSponsors .swiper-pagination",
+    clickable: true,
   },
   navigation: {
-    nextEl: '.officialSponsors .swiper-button-next',
-    prevEl: '.officialSponsors .swiper-button-prev',
+    nextEl: ".officialSponsors .swiper-button-next",
+    prevEl: ".officialSponsors .swiper-button-prev",
   },
-
 });
+const swiperGameList = new Swiper(".gameList .swiper",{
+  slidesPerView: 3,
+  spaceBetween: 5,
+  speed: 500,
 
-//officialSponsors 
+  // Responsive breakpoints
+  breakpoints: {
+    320: {
+    //  slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 640px
+   992: {
+      slidesPerView: 2,
+    },
+    1300:{
+      slidesPerView: 3,
+    }
+  },
+  pagination: {
+    el: ".gameList .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".gameList .swiper-button-next",
+    prevEl: ".gameList .swiper-button-prev",
+  },
+})
 
+//officialSponsors
 
 //format Number
 const formatNumber = () => {
@@ -94,34 +115,33 @@ const formatNumber = () => {
   });
 };
 formatNumber();
-animateDisplay = function(target, animationClass, displayType, timeout) {
+animateDisplay = function (target, animationClass, displayType, timeout) {
   // timeout should be longer than css transition
   var doneTimedDisplay = false,
     displaying = false;
 
-  target.addEventListener('transitionend', function() {
-    if (!target.classList.contains('active')) {
-      target.style.display = 'none';
+  target.addEventListener("transitionend", function () {
+    if (!target.classList.contains("active")) {
+      target.style.display = "none";
     }
     doneTimedDisplay = true;
   });
-  if (!target.style.display || target.style.display === 'none') {
+  if (!target.style.display || target.style.display === "none") {
     displaying = true;
     target.style.display = displayType;
   } else {
     displaying = false;
   }
 
-  window.requestAnimationFrame(function() {
+  window.requestAnimationFrame(function () {
     target.classList.toggle(animationClass);
-    doneTimedDisplay = false;     
+    doneTimedDisplay = false;
   });
 
   if (!displaying) {
-    setTimeout(function() {
-    
+    setTimeout(function () {
       if (!doneTimedDisplay) {
-        target.style.display = 'none';
+        target.style.display = "none";
       }
       doneTimedDisplay = true;
     }, timeout);
@@ -132,18 +152,15 @@ function tabList() {
   const sections = document.querySelectorAll(".whatsHappening .cardHappening");
   ulTabs.forEach((item, index) => {
     item.addEventListener("click", () => {
-      
       for (let i = 0; i < sections.length; i++) {
-      
-        ulTabs[i].classList.remove('active')
-       // animateDisplay(sections[i], 'active', 'none', 600)
-       sections[i].style.display="none"
-       sections[i].classList.remove('active')
+        ulTabs[i].classList.remove("active");
+        // animateDisplay(sections[i], 'active', 'none', 600)
+        sections[i].style.display = "none";
+        sections[i].classList.remove("active");
       }
-    //  sections[index].classList.add("active");
-      ulTabs[index].classList.add('active')
-      animateDisplay(sections[index], 'active', 'flex', 1000)
-    
+      //  sections[index].classList.add("active");
+      ulTabs[index].classList.add("active");
+      animateDisplay(sections[index], "active", "flex", 1000);
     });
   });
 }
@@ -165,3 +182,20 @@ if(event.ctrlKey===true){
 })
 
 */
+
+//fixed Header
+
+function fixedHeader(scrollValue,className,navItem) {
+  if (window.scrollY > scrollValue) {
+    document.body.classList.add(className);
+    document.querySelector(navItem).classList.add("animate__slideInDown")
+  } else {
+    document.body.classList.remove(className);
+    document.querySelector(navItem).classList.remove("animate__slideInDown")
+
+  }
+}
+window.onscroll = () => {
+  fixedHeader(50,"fixedHeader",".mainHeader-def");
+
+};

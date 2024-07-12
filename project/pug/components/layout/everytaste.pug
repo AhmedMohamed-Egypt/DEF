@@ -12,6 +12,7 @@ mixin cards(cardList)
       div.cover
 mixin tasteGame(gameList)
   each val in gameList
+   .swiper-slide 
     div(class="gameCard")
       div.imgContainer
        div.imgCover
@@ -32,5 +33,10 @@ div(class="everytaste overlayBottomTop drkBluebkground paddingSections" style='b
         +cards(card)
     h2(class="h2Heading text-center pdtop-50 mtop-50 mrb-50") We have something for every taste
     .gameList(class="d-flex justify-content-between pdtop-50")
-      +tasteGame(gameList)
-
+      .swiper 
+       .swiper-wrapper
+        +tasteGame(gameList)
+      div.pagination
+       .swiper-button-next.arrows
+       .swiper-button-prev.arrows
+      

@@ -1,0 +1,25 @@
+%change{
+    .changeGame{
+        padding-top: 50px;
+        &__container{
+            flex-direction: column;
+        }
+        .learnmoreBtn{
+            margin:auto;
+        }
+    }
+    .changeGame .content{
+        transform: none;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .changeGame img{
+        position: static;
+        width: 400px;
+        margin: auto;
+    }
+    .changeGame .h2Heading,.changeGame .content>p{
+        width: 100%;
+        max-width: 100%;
+    }
+}

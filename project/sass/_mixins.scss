@@ -62,3 +62,21 @@
 @mixin before(){
   @extend %pseduElement;
 }
+$px:"px";
+
+@mixin max($wdithSize){
+  @media (max-width:($wdithSize+"px")){
+    @content;
+  }
+}
+@mixin min($width){
+  @media (min-width:($width+"px")){
+    @content;
+  }
+}
+
+@mixin between($width1,$width2){
+  @media (min-width:($width1+"px")) and (max-width:($width2+"px")){
+     @content;
+  }
+}

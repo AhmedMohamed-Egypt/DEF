@@ -1,6 +1,7 @@
 .gameCard {
   position: relative;
   width:360px;
+  margin: auto;
   &::after {
     @include after();
     background-color: $thridViolet;

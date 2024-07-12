@@ -1,0 +1,12 @@
+//fixed header
+body{
+&.fixedHeader{
+        .mainHeader-def{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: $black;
+            z-index: 999999999999999999;
+        }
+    }
+}
