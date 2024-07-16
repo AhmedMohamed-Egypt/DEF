@@ -104,21 +104,38 @@ $classes: (
     @extend %bklinearGradient;
   }
 
-  .navbar-def {
-    flex-grow: 1;
-    ul {
-      width: 85%;
-      margin-left: auto;
-      margin-right: auto;
-      >li{
-        >a{
-          transition: .25s;
-          &:hover{
-            color: $violet;
-          }
+  &__list {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    >li{
+      >a{
+        transition: .25s;
+        &:hover{
+          color: $violet;
         }
       }
     }
+  }
+  &__hamburgMenu{
+    display: none;
+    transition: .25s;
+    span{
+      display: block;
+      width: 35px;
+      height: 2px;
+      background-color: #fff;
+      transition: .25s;
+      &:nth-child(2){
+        margin: 5px 0;
+      }
+    }
+  }
+  &__socialLink{
+    display: none;
+  }
+  &__dropdown{
+    width: 100%;
   }
 }
 .hero__content {

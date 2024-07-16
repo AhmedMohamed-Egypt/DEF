@@ -1,4 +1,50 @@
 //fixed header
+@keyframes fadeInMenu {
+    0% {
+        opacity: 0
+    }
+
+    10% {
+        opacity: .01
+    }
+
+    20% {
+        opacity: .02
+    }
+
+    30% {
+        opacity: .05
+    }
+
+    40% {
+        opacity: .06
+    }
+
+    50% {
+        opacity: .2
+    }
+
+    60% {
+        opacity: .4
+    }
+
+    70% {
+        opacity: .6
+    }
+
+    80% {
+        opacity: .8
+    }
+
+    90% {
+        opacity: .85
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
 body{
 &.fixedHeader{
         .mainHeader-def{
@@ -8,5 +54,36 @@ body{
             background-color: $black;
             z-index: 999999999999999999;
         }
+    }
+    &.slide{
+        .headerDEF__hamburgMenu{
+            transform: rotate(180deg);
+            span:nth-child(2){
+                opacity: 0;
+                margin: 0;
+            }
+            span:nth-child(1){
+                transform: rotate(45deg) translateX(-2px) translateY(6px);
+                animation-fill-mode: both;
+                animation-duration: .5s;
+                animation-timing-function: ease-in-out;
+                animation-name: fadeInMenu;
+                width: 25px;
+            }
+            span:nth-child(3){
+                transform: rotate(-45deg) translateX(-2px) translateY(-4px);
+                animation-fill-mode: both;
+                animation-duration: .5s;
+                animation-timing-function: ease-in-out;
+                animation-name: fadeInMenu;
+                width: 25px;
+            }
+        }
+.headerDEF__dropdown{
+    max-height: 500px;
+    overflow: visible;
+    padding-bottom: 20px;
+    transition: .2s max-height ease-in;
+}
     }
 }

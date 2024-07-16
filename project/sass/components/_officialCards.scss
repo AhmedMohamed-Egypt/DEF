@@ -4,6 +4,8 @@
     background-image: url("../images/cover-card-official.png");
     position: relative;
     cursor: pointer;
+    background-size: 95%;
+    background-repeat: no-repeat;
     img{
         @include cntrElmnt();
         width: 100px;

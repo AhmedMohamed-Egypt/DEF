@@ -16,7 +16,10 @@ const swiper = new Swiper(".getTickes  .swiper", {
       slidesPerView: 3,
     },
     // when window width is >= 640px
-    640: {
+    768: {
+      slidesPerView: 1,
+    },
+    1200: {
       slidesPerView: 3,
     },
   },
@@ -56,7 +59,10 @@ const swiperSponsors = new Swiper(".officialSponsors  .swiper", {
 
   // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
+    768:{
+      slidesPerView:3,
+     
+    }
   },
   pagination: {
     el: ".officialSponsors .swiper-pagination",
@@ -199,3 +205,19 @@ window.onscroll = () => {
   fixedHeader(50,"fixedHeader",".mainHeader-def");
 
 };
+//hamburg menu 
+
+function hamburgMenu(){
+  const hamburgBtn = document.querySelector(".headerDEF__hamburgMenu")
+  let show = false;
+  hamburgBtn.addEventListener('click',()=>{
+    if(!show){
+      document.body.classList.add('slide')
+      show = true
+    }else {
+      document.body.classList.remove('slide')
+      show = false
+    }
+  })
+}
+hamburgMenu()

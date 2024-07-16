@@ -1,5 +1,5 @@
 //Design for Desktop 
-@include between(1200,1439){
+@media screen and (max-width: 1439px) and (min-width: 1200px){
     .changeGame img{
      width: 350px;
      bottom: 0;
@@ -8,4 +8,5 @@
     .changeGame .content{
         transform: translate(500px, 20px);
     }
+   
 }

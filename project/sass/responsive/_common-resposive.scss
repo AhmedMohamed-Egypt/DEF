@@ -1,25 +1,55 @@
-%change{
-    .changeGame{
-        padding-top: 50px;
-        &__container{
-            flex-direction: column;
-        }
-        .learnmoreBtn{
-            margin:auto;
-        }
-    }
-    .changeGame .content{
-        transform: none;
-        text-align: center;
-        margin-top: 50px;
-    }
-    .changeGame img{
-        position: static;
-        width: 400px;
-        margin: auto;
-    }
-    .changeGame .h2Heading,.changeGame .content>p{
+@mixin mobile{
+       .headerDEF__list{
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        max-width: 100%;
+        padding-left: 0;
+        padding-top: 25px;
+        li{
+            width: 100%;
+            margin-bottom: 25px;
+        }
     }
+    .logo-def{
+        margin-right: auto;
+        order: -5;
+    }
+    .headerDEF__hamburgMenu{
+        order: -1;
+        display: block;
+    }
+    .headerDEF__container{
+        flex-wrap: wrap;
+    }
+    .headerDEF__socialLink{
+        display: block;
+    }
+    .heroTopBar  .socialLinks{
+        display: none;
+    }
+    .heroTopBar .rightTobBar{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .login {
+        margin-left: auto;
+    }
+    .headerDEF__dropdown{
+       
+        background: #000;
+        padding-left: 25px;
+       // padding-bottom: 25px;
+        margin-top: 10px;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        background-color: $black;
+        transition: .2s max-height ease-in;
+    }
+    .headerDEF__list{
+        padding-left: 0;
+    }
+}
+%mobile{
+    @include mobile();
 }

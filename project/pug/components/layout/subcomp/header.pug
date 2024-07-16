@@ -1,12 +1,22 @@
 div(class="headerDEF position-relative mtop-15 pdtop-12 pdb-12")
- div(class=" d-flex align-items-center container-def")
+ div(class=" d-flex align-items-center container-def headerDEF__container")
    .logo-def
     img(src="images/logo.png")
-   .navbar-def
-    ul(class="d-flex justify-content-between")
+   div(class="headerDEF__dropdown")
+    ul(class="headerDEF__list d-flex justify-content-between grow-1 align-items-center pdl-25")
       each val, index in ['About','Festival Details','Gaming Experiences','Game Expo Summit','Education','News']
        li
         a(href="#" class=`${index===0?'active':''} lama-bold white size-12 ltrspacingNav`)= val
-   include ../../general-components/getTicket.pug
+      li
+        include ../../general-components/getTicket.pug
+    div(class="headerDEF__socialLink")
+     include ./socialLinks.pug
+   div(class="headerDEF__hamburgMenu")
+    span 
+    span 
+    span
+   
+    
+   
   
  
