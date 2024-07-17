@@ -4,6 +4,7 @@
 mixin cards(cardList)
 
   each val,key in cardList
+   .swiper-slide
     li(class="d-flex flex-column pdtop-28  cardItem-numbers")
       div.cardcontainer
 
@@ -30,7 +31,12 @@ div(class="everytaste overlayBottomTop drkBluebkground paddingSections" style='b
   .container-def
     .cards-definitions
       ul(class="d-flex align-items-center")
-        +cards(card)
+       .swiper.listCards
+        .swiper-wrapper
+         +cards(card)
+       div.pagination
+        .swiper-button-next.arrows
+        .swiper-button-prev.arrows
     h2(class="h2Heading text-center pdtop-50 mtop-50 mrb-50") We have something for every taste
     .gameList(class="d-flex justify-content-between pdtop-50")
       .swiper 

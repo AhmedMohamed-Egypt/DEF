@@ -80,6 +80,36 @@ const swiperSponsors = new Swiper(".officialSponsors  .swiper", {
     prevEl: ".officialSponsors .swiper-button-prev",
   },
 });
+//swiper listCards
+const swiperListCards = new Swiper(".swiper.listCards", {
+  // Default parameters
+  slidesPerView: 6,
+ 
+  speed: 500,
+
+  // Responsive breakpoints
+  breakpoints: {
+    375:{
+      slidesPerView:2,
+    },
+
+    768:{
+      slidesPerView:3,
+     
+    },
+    1400:{
+      slidesPerView:5,
+    }
+  },
+  pagination: {
+    el: ".swiper.listCards .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+nextEl: ".swiper.listCards ~div.pagination .swiper-button-next",
+    prevEl: ".swiper.listCards ~div.pagination .swiper-button-prev",
+  },
+});
 const swiperGameList = new Swiper(".gameList .swiper",{
   slidesPerView: 3,
   spaceBetween: 5,
