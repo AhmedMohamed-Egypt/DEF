@@ -1,7 +1,69 @@
 //min width 375 and max width 767
 
 @media screen and (max-width: 768px) and (min-width: 375px){
-  
+    .container-def{
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+    }
+    .h2Heading{
+        font-size: 28px;
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+    .mainHeader-def
+    {
+        z-index: 999;
+    }
+    .heroArea{
+        padding: 25px 0;
+    }
+    .hero__content{
+        width: 90% !important;
+        margin: auto;
+        position: relative;
+        h1{
+            z-index: 9999;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#000,.35);
+        }
+    }
+    .hero-details{
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 99999;
+        >div:nth-child(2){
+            margin-left: 0;
+        }
+    }
+    .container-def.shrink{
+        max-width: 90%;
+    }
+    .heroTopBar {
+        width: 90%;
+        margin: auto;
+    }
+    .headerDEF__container{
+        width: 90%;
+    }
+    .whatsHappening .tabContainer .ultab li{
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .headerDEF__socialLink ul li{
+        margin-right: 14px !important;
+    }
     .changeGame{
         padding-top: 50px;
         &__container{
@@ -18,7 +80,7 @@
     }
     .changeGame img{
         position: static;
-        width: 400px;
+        width: 60%;
         margin: auto;
         max-width: 90%;
     }
@@ -26,11 +88,135 @@
         width: 100%;
         max-width: 100%;
     }
-    .hero__content {
-        position: static !important;
+    @include hero;
+    .whatTheNew .container-whatTheNew{
+        margin: auto;
+    }
+    .whatTheNew .cardContent{
+        max-width: 90%;
+        margin: auto;
+        h2{
+            margin-top: 20px;
+        }
+    }
+    .whatTheNew .education-sliding{
+        border-radius: 0;
+        padding-bottom: 0;
+    }
+    .whatTheNew .swiper{
+        transform: none;
+        width: 100%;
+    }
+    .whatTheNew .container-whatTheNew{
+        width: 100%;
+    }
+    .whatTheNew .cardImage{
+        max-width: 90%;
+        margin: auto;
+        min-width: 0;
+        width: 100%;
+        height: 280px;
+    }
+    .education-sliding{
+        .content{
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+    }
+    .whatTheNew{
+        height: auto;
+        padding: 20px 0;
+    }
+    .whatTheNew .swipperNav{
+        transform: none;
+    }
+    .officialCard{
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    
     }
   
     @include mobile;
-    //mobile 
-  
+    .everytaste .cards-definitions ul{
+        flex-direction: column;
+    }
+    .numericSection__Maincontainer{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .numericSection{
+     position: static;
+     width: 100%;
+
+    }
+    .everytaste .cards-definitions ul{
+        background: none;
+    }
+    .earlyBird, .media, .vip{
+        max-width: 85%;
+    }
+    .numericSection__Maincontainer p {
+        margin-left: 0;
+    }
+    .heading-ticket>div{
+        flex-direction: column;
+    }
+    .heading-ticket>div>div{
+        flex-direction: column;
+    }
+    .heading-ticket>div>div img{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .cardHappening img{
+        width: 200px;
+        margin-top: 25px;
+    }
+    .cardHappening {
+        align-items: center;
+        flex-direction: column;
+        .content >p{
+            width: 100%;
+        }
+    }
+    .footerGame__container{
+        padding: 50px 0;
+        .socialLinks{
+            margin-bottom: 25px;
+        }
+    }
+  .footerGame__container >div{
+    max-width: 85%;
+    margin: auto;
+  }
+  .footerGame__container--logogame img{
+    width: 220px;
+    margin-bottom: 25px;
+  }
+  .footerGame__container--register{
+    width: 100%;
+  }
+  .footerGame__container--register a{
+     display: block;
+     width: 100%;
+     padding: 15px 10px;
+     text-align: center;
+     font-size: 18px;
+  }
+  .footerGame__container__register{
+    width: 100%;
+    margin-bottom: 25px;
+   
+  }
+  .footerGame__container__copyright{
+    align-items: center;
+    >p{
+        margin-top: 0;
+    }
+    ul li a{
+        margin-bottom: 0;
+    }
+  }
 }

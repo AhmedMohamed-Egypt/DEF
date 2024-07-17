@@ -9,12 +9,10 @@ const swiper = new Swiper(".getTickes  .swiper", {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-    },
+   
     // when window width is >= 640px
     768: {
       slidesPerView: 1,
@@ -35,7 +33,9 @@ const swiperEducation = new Swiper(".education-sliding  .swiper", {
   spaceBetween: 5,
   // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
+   375:{
+    slidesPerView:1
+   }
   },
   pagination: {
     el: ".education-sliding .swiper-pagination",
@@ -59,9 +59,16 @@ const swiperSponsors = new Swiper(".officialSponsors  .swiper", {
 
   // Responsive breakpoints
   breakpoints: {
+    375:{
+      slidesPerView:1,
+    },
+
     768:{
       slidesPerView:3,
      
+    },
+    1400:{
+      slidesPerView:6,
     }
   },
   pagination: {
@@ -80,11 +87,9 @@ const swiperGameList = new Swiper(".gameList .swiper",{
 
   // Responsive breakpoints
   breakpoints: {
-    320: {
-    //  slidesPerView: 2,
-    },
+   
     // when window width is >= 480px
-    480: {
+   375: {
       slidesPerView: 1,
     },
     // when window width is >= 640px
