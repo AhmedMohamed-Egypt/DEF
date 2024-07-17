@@ -231,4 +231,14 @@
   .getTickes .pagination{
     top: auto;
   }
+  .gameList .pagination{
+    bottom: 0;
+   // top: 100%;
+  }
+}
+
+.gameList .pagination{
+    @include max(500){
+        top: auto;
+    }
 }

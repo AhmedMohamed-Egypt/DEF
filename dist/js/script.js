@@ -90,7 +90,7 @@ const swiperListCards = new Swiper(".swiper.listCards", {
   // Responsive breakpoints
   breakpoints: {
     375:{
-      slidesPerView:2,
+      slidesPerView:1,
     },
 
     768:{
