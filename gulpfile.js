@@ -65,3 +65,10 @@ gulp.task("watch", function () {
   gulp.watch("project/imgs/", gulp.series("image"));
   gulp.watch("project/sass/fonts/", gulp.series("fonts"));
 });
+
+
+
+gulp.task(
+  "build",
+  gulp.series("pug", "compileSass", "image", "fonts", "js")
+);
